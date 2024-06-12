@@ -26,7 +26,7 @@ class Home : AppCompatActivity() {
         supportActionBar?.hide()
         val nome = intent.extras?.getString("nome")
 
-        binding.txtNomeUsuario.text = "Bem-vindo(a),$nome"
+        binding.txtNomeUsuario.text = "Bem-vindo,$nome"
         val recyclerViewServicos = binding.recyclerViewServicos
         recyclerViewServicos.layoutManager = GridLayoutManager(this, 2)
         servicosAdapter = ServicosAdapter(this,listaServicos)
@@ -48,11 +48,11 @@ class Home : AppCompatActivity() {
         val servicos2 = Servicos(R.drawable.img2, "Corte de barba")
         listaServicos.add(servicos2)
 
-        val servicos3 = Servicos(R.drawable.img3, "Lavagem de cabelo")
-        listaServicos.add(servicos3)
-
-        val servicos4 = Servicos(R.drawable.img4, "Tratamento de cabelo")
-        listaServicos.add(servicos4)
+//        val servicos3 = Servicos(R.drawable.img3, "Lavagem de cabelo")
+//        listaServicos.add(servicos3)
+//
+//        val servicos4 = Servicos(R.drawable.img4, "Tratamento de cabelo")
+//        listaServicos.add(servicos4)
     }
 
 }
